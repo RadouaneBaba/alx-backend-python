@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """ wait_n function impelelmentation  """
 from typing import List
 import asyncio
