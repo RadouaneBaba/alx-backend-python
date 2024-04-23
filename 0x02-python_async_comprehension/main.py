@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
+
 import asyncio
 
-async_comprehension = __import__('1-async_comprehension').async_comprehension
+
+measure_runtime = __import__('2-measure_runtime').measure_runtime
 
 
 async def main():
-    print(await async_comprehension())
+    return await(measure_runtime())
 
-asyncio.run(main())
-
+print(
+    asyncio.run(main())
+)
